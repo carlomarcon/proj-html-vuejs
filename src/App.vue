@@ -1,9 +1,15 @@
 <script>
-export default {};
+import AppBody from "./components/appBody.vue";
+import AppHeader from "./components/appHeader.vue";
+import AppPoster from "./components/appPoster.vue";
+
+export default { components: { AppHeader, AppBody, AppPoster } };
 </script>
 
 <template>
-  <i class="fa-solid fa-house"></i>
+  <AppHeader />
+  <AppBody />
+  <AppPoster />
 </template>
 
 <style lang="scss">
