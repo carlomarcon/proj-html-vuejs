@@ -6,6 +6,7 @@ export default {
     text: String,
     Extra: String,
     check: Number,
+    color: Array,
   },
   methods: {
     getImagepath(img) {
@@ -18,10 +19,10 @@ export default {
   <div class="wrapper" :style="{ height: check === 1 ? '550px' : '600px' }">
     <!-- :style="{ height: check === 2 || check === 1 ? '300px' : '600px' }" -->
     <!-- --!Specialists In Modern Construction -->
-    <div class="Text" v-show="check === 0 || check === 2">
+    <div class="Text" v-show="check === 0 || check === 2 || check === 3">
       <h2>{{ Title }}</h2>
 
-      <hr />
+      <div></div>
       <p>
         {{ text }}
       </p>
@@ -30,17 +31,31 @@ export default {
       <div
         :class="{
           cardMedium: check === 0 || check === 1,
-          cardBig: check === 2,
+          cardBig: check === 2 || check === 3,
         }"
-        v-for="element in list"
+        v-for="(element, index) in list"
       >
-        <i v-if="check === 0" :class="element.logo"></i>
+        <i
+          v-if="check === 0"
+          :class="element.logo"
+          :style="{ 'background-color': color[index] }"
+        ></i>
         <i v-if="check === 1" class="style" :class="element.logo"></i>
-        <img v-if="check === 2" :src="getImagepath(element.img)" alt="" />
+        <img
+          v-if="check === 2 || check === 3"
+          :src="getImagepath(element.img)"
+          alt=""
+        />
         <h3>{{ element.title }}</h3>
         <p :class="{ colorWhite: check === 1 }">{{ element.paragraph }}</p>
       </div>
     </div>
+  </div>
+  <div class="Extra" v-show="check === 2">
+    <div></div>
+    <h2>View All Project</h2>
+
+    <div></div>
   </div>
 </template>
 <style scoped lang="scss">
@@ -61,6 +76,13 @@ export default {
     width: 40%;
     text-align: center;
     line-height: 2.5rem;
+
+    div {
+      background-color: #fed03d;
+      width: 10rem;
+      height: 2px;
+      margin: 1rem auto;
+    }
   }
 
   .Column {
@@ -81,7 +103,7 @@ export default {
 
       i {
         padding: 1rem;
-        width: 3rem;
+        width: 4rem;
         height: 3rem;
         border: 1px solid black;
         border-radius: 50%;
@@ -109,6 +131,20 @@ export default {
         height: 100%;
       }
     }
+  }
+}
+.Extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  gap: 5rem;
+
+  div {
+    height: 1px;
+    width: 19rem;
+    background-color: rgb(185, 183, 183);
   }
 }
 </style>
