@@ -1,8 +1,12 @@
 <script>
-export default {};
+export default {
+  props: {
+    text: String,
+  },
+};
 </script>
 <template>
-  <button>GET QUOTE</button>
+  <button>{{ text }}</button>
 </template>
 <style lang="scss" scoped>
 button {

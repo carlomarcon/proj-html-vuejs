@@ -11,6 +11,7 @@ export default {
 };
 </script>
 <template>
+  <!-- <img src="../assets/img/" alt=""> -->
   <AppQuote />
 </template>
 <style lang="scss" scoped></style>

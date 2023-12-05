@@ -6,7 +6,7 @@ export default { components: { AppButton } };
 <template>
   <div class="poster">
     <h1>Do You Have a Construction Project We Can Help With?</h1>
-    <AppButton class="Btn" />
+    <AppButton text="Get A Quote" class="Btn" />
   </div>
 </template>
 <style lang="scss" scoped>
