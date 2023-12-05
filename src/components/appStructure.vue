@@ -1,16 +1,18 @@
 <script>
 export default {
   props: {
-    list: Object,
+    list: Array,
     Title: String,
     text: String,
+    Extra: String,
+    check: Boolean,
   },
 };
 </script>
 <template>
   <div class="wrapper">
     <!-- --!Specialists In Modern Construction -->
-    <div class="Text">
+    <div class="Text" v-show="check === false">
       <h2>Specialists In Modern Construction</h2>
       <hr />
       <p>
@@ -19,7 +21,11 @@ export default {
       </p>
     </div>
     <div class="Column">
-      <div class="cardMedium" v-for="num in 4"></div>
+      <div class="cardMedium" v-for="element in list">
+        <i :class="element.logo"></i>
+        <h3>{{ element.title }}</h3>
+        <p>{{ element.paragraph }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -41,15 +47,34 @@ export default {
 
   .Column {
     height: 250px;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 3px;
 
     .cardMedium {
-      width: calc(100% / 4);
-      height: 80%;
-      background-color: red;
+      background-color: #f5f5f5;
+      width: calc((100% / 4) - 3px);
+      height: 90%;
+      line-height: 25px;
+      text-align: center;
+      padding: 10px;
+
+      i {
+        padding: 1rem;
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+
+      .style {
+        border: none;
+        padding: 1rem;
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
 }
