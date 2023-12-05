@@ -29,12 +29,12 @@ export const store = reactive({
   ],
   objectarrayStats: [
     {
-      logo: "fa-regular fa-building",
+      logo: "fa-solid fa-suitcase",
       title: "3534",
       paragraph: "PLANNING APPLICATIONS",
     },
     {
-      logo: "fa-solid fa-users",
+      logo: "fa-regular fa-building",
       title: "896",
       paragraph: "COMPLETED PROJECTS",
     },
@@ -48,5 +48,12 @@ export const store = reactive({
       title: "19",
       paragraph: "INTERNATIONAL OFFICES",
     },
+  ],
+  objectImg: [
+    {
+      img: "project2-featured-15013609-600x600.jpg",
+    },
+    { img: "project1-featured-294276386-600x600.jpg" },
+    { img: "project3-featured-189023420-600x600.jpg" },
   ],
 });

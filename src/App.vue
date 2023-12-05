@@ -20,11 +20,20 @@ export default {
   <AppHeader />
   <AppBody />
   <AppPoster />
-  <AppStructure :list="this.store.objectArray" :check="false" />
   <AppStructure
-    :list="this.store.objectarrayStats"
-    :check="true"
-    class="Style"
+    :list="this.store.objectArray"
+    :check="0"
+    Title="Specialists In Modern Construction"
+    text=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        rerum et earum harum."
+  />
+  <AppStructure :list="this.store.objectarrayStats" :check="1" class="Style" />
+  <AppStructure
+    :list="this.store.objectImg"
+    :check="2"
+    Title="Explore Recent Work"
+    text=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        rerum et earum harum."
   />
 </template>
 
@@ -34,5 +43,6 @@ export default {
 
 .Style {
   color: #fed03d;
+  background-color: white;
 }
 </style>

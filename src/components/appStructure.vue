@@ -5,26 +5,40 @@ export default {
     Title: String,
     text: String,
     Extra: String,
-    check: Boolean,
+    check: Number,
+  },
+  methods: {
+    getImagepath(img) {
+      return new URL(`../assets/images/${img}`, import.meta.url).href;
+    },
   },
 };
 </script>
 <template>
-  <div class="wrapper">
+  <div class="wrapper" :style="{ height: check === 1 ? '550px' : '600px' }">
+    <!-- :style="{ height: check === 2 || check === 1 ? '300px' : '600px' }" -->
     <!-- --!Specialists In Modern Construction -->
-    <div class="Text" v-show="check === false">
-      <h2>Specialists In Modern Construction</h2>
+    <div class="Text" v-show="check === 0 || check === 2">
+      <h2>{{ Title }}</h2>
+
       <hr />
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-        rerum et earum harum.
+        {{ text }}
       </p>
     </div>
     <div class="Column">
-      <div class="cardMedium" v-for="element in list">
-        <i :class="element.logo"></i>
+      <div
+        :class="{
+          cardMedium: check === 0 || check === 1,
+          cardBig: check === 2,
+        }"
+        v-for="element in list"
+      >
+        <i v-if="check === 0" :class="element.logo"></i>
+        <i v-if="check === 1" class="style" :class="element.logo"></i>
+        <img v-if="check === 2" :src="getImagepath(element.img)" alt="" />
         <h3>{{ element.title }}</h3>
-        <p>{{ element.paragraph }}</p>
+        <p :class="{ colorWhite: check === 1 }">{{ element.paragraph }}</p>
       </div>
     </div>
   </div>
@@ -38,6 +52,10 @@ export default {
   justify-content: center;
   align-items: center;
 
+  .colorWhite {
+    color: white;
+  }
+
   .Text {
     height: 150px;
     width: 40%;
@@ -46,7 +64,7 @@ export default {
   }
 
   .Column {
-    height: 250px;
+    height: 300px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -70,10 +88,25 @@ export default {
       }
 
       .style {
+        font-size: 3rem;
         border: none;
         padding: 1rem;
-        width: 3rem;
-        height: 3rem;
+        width: 6rem;
+        height: 4rem;
+      }
+    }
+
+    .cardBig {
+      background-color: #f5f5f5;
+      width: calc((100% / 3) - 3px);
+      height: 100%;
+      line-height: 25px;
+      text-align: center;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }

@@ -22,6 +22,12 @@ export default {
 </template>
 <style lang="scss" scoped>
 .wrapper {
+  background-image: url("../assets/images/construction_thumbnail-600x450.jpg");
+  background-repeat: no-repeat;
+
+  background-position: left;
+  background-size: cover;
+
   height: 600px;
   width: 100%;
   display: flex;

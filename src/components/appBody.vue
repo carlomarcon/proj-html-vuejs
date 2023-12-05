@@ -4,7 +4,7 @@ import AppQuote from "./appQuote.vue";
 export default {
   methods: {
     getImagepath(img) {
-      return new URL(`../assets/img/${img}`, import.meta.url).href;
+      return new URL(`../assets/images/${img}`, import.meta.url).href;
     },
   },
   components: { AppQuote },
@@ -12,6 +12,7 @@ export default {
 </script>
 <template>
   <!-- <img src="../assets/img/" alt=""> -->
+  <!-- <img src="../assets/images/" alt=""> -->
   <AppQuote />
 </template>
 <style lang="scss" scoped></style>
