@@ -5,26 +5,22 @@ export const store = reactive({
     {
       logo: "fa-regular fa-building",
       title: "Buildings",
-      paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
       logo: "fa-solid fa-arrows-rotate",
       title: "Renovate",
-      paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     },
     {
       logo: "fa-solid fa-house",
       title: "Construct",
-      paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     },
     {
       logo: "fa-solid fa-truck",
       title: "Exclusive",
-      paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+      paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     },
   ],
   objectarrayStats: [
@@ -62,25 +58,25 @@ export const store = reactive({
       logo: "fa-solid fa-house",
       title: "Great Services",
       paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae.",
     },
     {
       logo: "fa-solid fa-gear",
       title: "Highest Standards",
       paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vita.",
     },
     {
       logo: "fa-solid fa-users",
       title: "Professional Team",
       paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vita.",
     },
     {
       logo: "fa-solid fa-lightbulb",
       title: "Creative Solutions",
       paragraph:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vita.",
     },
   ],
   objectArrayNews: [

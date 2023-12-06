@@ -21,15 +21,20 @@ export default { components: { AppButton } };
 </template>
 <style lang="scss" scoped>
 .wrapper {
-  height: 600px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  background-image: url("../assets/images/about-call-to-action-57862405.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .text {
     width: 40%;
     height: 60%;
+    color: white;
 
     div {
       background-color: #fed03d;
@@ -54,6 +59,7 @@ export default { components: { AppButton } };
 
     h5 {
       margin: 5px;
+      color: white;
     }
   }
 }

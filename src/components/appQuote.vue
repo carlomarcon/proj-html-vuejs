@@ -17,7 +17,10 @@ export default {
     </div>
 
     <div class="stickerTop">Demos</div>
-    <div class="stickerDown">On Sale</div>
+    <div class="stickerDown">
+      <span>39$</span>
+      <h5>On Sale</h5>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -41,13 +44,22 @@ export default {
     text-align: center;
     line-height: 2.5rem;
 
+    h1 {
+      color: white;
+    }
+
+    h4 {
+      color: #f5f5f5;
+      opacity: 50%;
+    }
+
     button {
       width: 12rem;
-      padding: 8px;
+      padding: 12px;
     }
 
     .leftButton {
-      margin-right: 5px;
+      margin-right: 8px;
       background-color: #333333;
       color: white;
       border: none;
@@ -61,12 +73,17 @@ export default {
   }
   .stickerTop,
   .stickerDown {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 10px;
     position: absolute;
-    background-color: grey;
+    background-color: #f5f5f5;
     padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
   }
 
   .stickerTop {
@@ -75,8 +92,13 @@ export default {
   }
 
   .stickerDown {
-    top: 15%;
+    top: 17%;
     right: 0;
+
+    span {
+      color: green;
+      font-size: 2rem;
+    }
   }
 }
 </style>

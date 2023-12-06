@@ -30,6 +30,10 @@ export default {
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-image: url("../assets/images/home-parallax-144609983.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .col {
     height: 80%;
@@ -40,6 +44,7 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    color: #f5f5f5;
     div {
       background-color: #fed03d;
       width: 10rem;

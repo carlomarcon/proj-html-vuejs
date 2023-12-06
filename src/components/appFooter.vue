@@ -58,6 +58,7 @@ export default {
       />
     </div>
   </div>
+  <div class="end"></div>
 </template>
 <style lang="scss" scoped>
 .wrapper {
@@ -67,10 +68,15 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: #3f3f3f;
 
   .col {
     width: calc(100% / 5);
     height: 90%;
+
+    h4 {
+      color: #fed03d;
+    }
 
     .location {
       height: 220px;
@@ -105,5 +111,10 @@ export default {
       margin-top: 10px;
     }
   }
+}
+.end {
+  width: 100%;
+  height: 30px;
+  background-color: black;
 }
 </style>

@@ -53,6 +53,7 @@ export default {
     :color="this.store.colorPanel1"
     :list="this.store.objectarrayValues"
     :check="0"
+    :flag="true"
     Title="Core Values"
     text=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
         rerum et earum harum."

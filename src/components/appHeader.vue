@@ -50,7 +50,7 @@ header {
       li {
         display: inline-block;
         margin-left: 50px;
-
+        color: grey;
         button {
           width: 10rem;
           padding: 15px;
