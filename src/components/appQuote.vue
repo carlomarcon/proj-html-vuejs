@@ -22,7 +22,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 .wrapper {
-  background-image: url("../assets/images/construction_thumbnail-600x450.jpg");
+  background-image: url("../assets/images/home-slider-62528242.jpg");
   background-repeat: no-repeat;
 
   background-position: left;

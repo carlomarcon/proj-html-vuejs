@@ -85,19 +85,19 @@ export const store = reactive({
   ],
   objectArrayNews: [
     {
-      img: "blog-post-332773904-200x121.jpg",
+      img: "blog-post-332773904-400x241.jpg",
       title: "Redeveloping Florida's Remote Southern Coast",
       paragraph:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
     },
     {
-      img: "blog-post-134132600-200x121.jpg",
+      img: "blog-post-134132600-400x241.jpg",
       title: "How We Manage Large Construction Projects",
       paragraph:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",
     },
     {
-      img: "blog-post-92486644-200x121.jpg",
+      img: "blog-post-92486644-400x241.jpg",
       title: "Future proofing a modern home",
       paragraph:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor incidunt recusandae iure perferendis vitae, magni ipsa laboriosam nisi maiores voluptate numquam sint suscipit autem quis!",

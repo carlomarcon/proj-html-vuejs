@@ -1,5 +1,7 @@
 <script>
 import AppBody from "./components/appBody.vue";
+import AppExperiences from "./components/appExperiences.vue";
+import AppFooter from "./components/appFooter.vue";
 import AppHeader from "./components/appHeader.vue";
 import AppPoster from "./components/appPoster.vue";
 import AppStructure from "./components/appStructure.vue";
@@ -13,7 +15,15 @@ export default {
     };
   },
 
-  components: { AppHeader, AppBody, AppPoster, AppStructure, AppTestimonial },
+  components: {
+    AppHeader,
+    AppBody,
+    AppPoster,
+    AppStructure,
+    AppTestimonial,
+    AppExperiences,
+    AppFooter,
+  },
 };
 </script>
 
@@ -65,6 +75,8 @@ export default {
     text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
         rerum et earum harum."
   />
+  <AppExperiences />
+  <AppFooter />
 </template>
 
 <style lang="scss">
