@@ -51,7 +51,11 @@ export default {
     </div>
     <div class="col">
       <h4>FIND US</h4>
-      <img :src="getImagepath('construction_map_pin.png-Notti')" alt="" />
+      <img
+        class="location"
+        :src="getImagepath('construction_map_pin.png-Notti')"
+        alt=""
+      />
     </div>
   </div>
 </template>
@@ -67,6 +71,11 @@ export default {
   .col {
     width: calc(100% / 5);
     height: 90%;
+
+    .location {
+      height: 220px;
+      width: 250px;
+    }
 
     ul {
       margin-top: 1rem;

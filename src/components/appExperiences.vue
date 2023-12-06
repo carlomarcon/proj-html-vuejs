@@ -42,12 +42,14 @@ export default { components: { AppButton } };
   .button {
     width: 20%;
     height: 60%;
+    text-align: center;
 
     .btn {
       color: #3f3f3f;
       background-color: #fed03d;
       padding: 0.5rem;
-      width: 10rem;
+      width: 14rem;
+      height: 3rem;
     }
 
     h5 {
