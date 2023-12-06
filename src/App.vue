@@ -56,6 +56,15 @@ export default {
     text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
         rerum et earum harum."
   />
+  <AppStructure
+    id="News"
+    Title="Trusted Partners"
+    :list="this.store.partnersObject"
+    :color="this.store.none"
+    :check="4"
+    text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+        rerum et earum harum."
+  />
 </template>
 
 <style lang="scss">

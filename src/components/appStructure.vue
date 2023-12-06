@@ -16,10 +16,19 @@ export default {
 };
 </script>
 <template>
-  <div class="wrapper" :style="{ height: check === 1 ? '550px' : '600px' }">
+  <div
+    class="wrapper"
+    :style="{
+      height: check === 1 ? '550px' : '600px',
+      height: check === 3 ? '900px' : '600px',
+    }"
+  >
     <!-- :style="{ height: check === 2 || check === 1 ? '300px' : '600px' }" -->
     <!-- --!Specialists In Modern Construction -->
-    <div class="Text" v-show="check === 0 || check === 2 || check === 3">
+    <div
+      class="Text"
+      v-show="check === 0 || check === 2 || check === 3 || check === 4"
+    >
       <h2>{{ Title }}</h2>
 
       <div></div>
@@ -32,6 +41,7 @@ export default {
         :class="{
           cardMedium: check === 0 || check === 1,
           cardBig: check === 2 || check === 3,
+          cardXS: check === 4,
         }"
         v-for="(element, index) in list"
       >
@@ -42,7 +52,7 @@ export default {
         ></i>
         <i v-if="check === 1" class="style" :class="element.logo"></i>
         <img
-          v-if="check === 2 || check === 3"
+          v-if="check === 2 || check === 3 || check === 4"
           :src="getImagepath(element.img)"
           alt=""
         />
@@ -51,7 +61,7 @@ export default {
       </div>
     </div>
   </div>
-  <div class="Extra" v-show="check === 2">
+  <div class="Extra" v-show="check === 2 || check === 3">
     <div></div>
     <h2>View All Project</h2>
 
@@ -92,6 +102,19 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     gap: 3px;
+
+    .cardXS {
+      width: calc((100% / 5) - 3px);
+      height: 50%;
+      line-height: 25px;
+      text-align: center;
+      padding: 10px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
 
     .cardMedium {
       background-color: #f5f5f5;
